@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Library</title>
+      <link rel="icon" href="/src/images/movies.ico" type="image/icon" />
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
@@ -40,16 +41,29 @@
           </button>
         </div>
 
-    <!-- Add loader and preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader"></div>
-    </div>
-    <div class="loader visually-hidden"></div>
-      </header>
-
-    <include src="./partials/lib-main.html"></include>
+    </header>
+    <main>
+      <section class="section">
+        <ul class="container film__container library__container"></ul>
+      </section>
+    
+      <!-- Section pagination -->
+     <section class="pagination-section">
+        <div class="container">
+          <h2 class="visually-hidden">Pagination</h2>
+          <ul class="pagination pagination-container"></ul>
+        </div>
+      </section> 
+    
+      <!-- Add loader and preloader -->
+      <div class="preloader-wrapper">
+        <div class="preloader"></div>
+      </div>
+      <div class="loader visually-hidden"></div>
+    
+    </main>
+    <include src="./partials/modal.html"></include>
 
     <script src="./library.js" type="module"></script>
-
   </body>
 </html>
